@@ -1,0 +1,25 @@
+.container.project-name.text-uppercase.font-weight-bold
+  %p.text-center
+    = t('projects.timer.name')
+
+
+.container.project.project-timer.center
+  .btn-group.btn-group-justified
+    = link_to fa_icon(:play), "#",
+    class: 'btn btn-success btn-col-4', id: 'timer-play',
+    remote: true
+    = link_to fa_icon(:pause), "#",
+    class: 'btn btn-warning btn-col-4', id: 'timer-pause',
+    remote: true
+    = link_to fa_icon(:repeat), "#",
+    class: 'btn btn-info btn-col-4', id: 'timer-repeat',
+    remote: true
+  #timer
+    #hour
+      0
+    &nbsp;:
+    #minute
+      0
+    &nbsp;:
+    #second
+      15

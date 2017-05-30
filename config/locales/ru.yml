@@ -5,3 +5,7 @@ ru:
   test: это тест
   nav:
     nav_switcher: Кнопка, для переключения навигации
+  projects:
+    timer:
+      name: Таймер
+      description: Таймер включается и отключается по кнопке
