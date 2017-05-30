@@ -1,0 +1,21 @@
+%nav.navbar.navbar-default
+  .container-fluid
+    .navbar-header
+      .navbar-brand
+        = link_to root_path do
+          = image_tag 'photos-icon-64x64', alt: 'мини-проекты'
+          = t('app.name')
+      %button.navbar-toggle.collapsed{type: 'button',
+      data: {toggle: 'collapse', target: '#navbar-main'}}
+        %span.sr-only
+          = t('app.nav.nav_switcher')
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+    %ul.nav.navbar-nav.collapse.navbar-collapse.navbar-right#navbar-main
+      %li
+        = link_to "project 1", "#"
+      %li
+        = link_to "project 2", "#"
+      %li
+        = link_to "project 3", "#"
