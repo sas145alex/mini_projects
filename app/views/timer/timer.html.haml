@@ -2,7 +2,6 @@
   %p.text-center
     = t('projects.timer.name')
 
-
 .container.project.project-timer.center
   .btn-group.btn-group-justified
     = link_to fa_icon(:play), "#",
@@ -23,3 +22,15 @@
     &nbsp;:
     #second
       15
+
+  .timer-customise
+    .input-group.bootstrap-timepicker.timepicker.time
+      = text_field_tag('custom time', '',
+      class: 'form-control input-small',
+      id: 'timepicker')
+      %span.input-group-addon
+        %span.glyphicon.glyphicon-time
+    = link_to fa_icon(:check), '#',
+    class: 'btn btn-primary',
+    id: 'timer-set',
+    remote: true
